@@ -1,0 +1,82 @@
+.animate-logo {
+  animation: focus-in-contract 1s ease 0.2s 1 normal none;
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.animate-logo-tag {
+  display: inline-block;
+  animation: flip 5s linear 1s 1 normal none;
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.animate-slide-in-top {
+  animation-name: slide-in-bck-top;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  /* shorthand 
+    animation: slide-in-bck-top 1s ease 0s 1 normal none;
+    */
+}
+@keyframes slide-in-bck-top {
+  0% {
+    height: 0;
+    /* opacity: 0; */
+  }
+  100% {
+    height: auto;
+    /* opacity: 1; */
+  }
+}
+
+.animate-shutter-in {
+  /* width: 100px;
+    height: 100px;
+    background-color:#ffe672; */
+  animation-name: shutter-in-top;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  /* shorthand 
+    animation: shutter-in-top 1s ease 0s 1 normal none;
+    */
+}
+@keyframes shutter-in-top {
+  0% {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    opacity: 0.1;
+    top: 20px;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}

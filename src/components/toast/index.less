@@ -1,0 +1,45 @@
+.cmp-toast-wrapper {
+  top: 72px;
+  z-index: 99;
+  @apply fixed w-full flex justify-center flex-col items-center;
+
+  .cmp-toast {
+    @apply mx-10 mt-2 md:mt-4 md:w-[640px];
+  }
+
+  .cmp-toast-content {
+    background: rgba(224, 1, 229, 0.2);
+    border: 1px solid #e001e5;
+    color: #e001e5;
+    @apply px-2 border whitespace-pre-wrap break-words md:rounded md:p-3;
+  }
+
+  .cmp-toast-animation-fade-in {
+    animation: cmp-toast-fade-in-top 1s ease 0s 1 normal none;
+  }
+  @keyframes cmp-toast-fade-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .cmp-toast-animation-fade-out {
+    animation: cmp-toast-fade-out-top 1s ease 0s 1 normal none;
+  }
+
+  @keyframes cmp-toast-fade-out-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  }
+}
