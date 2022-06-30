@@ -40,11 +40,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 # Before publish on line, you need to check the list:
 1. Compare the `.env` and `.env.production` file, check for errors;
-    
-    check about
-    * `REACT_APP_API_BASE_URL` request base URL;
-    * `REACT_APP_CONTRACT_*` contracts addr;
-    * `REACT_APP_CURRENT_ENV_CHAIN_ID` chain id;
 
 2. Check `index.html`
     * `dns-prefetch` and `preconnect` link 
